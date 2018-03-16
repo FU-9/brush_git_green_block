@@ -71,11 +71,11 @@ class UpdateGit:
 
     def run(self):
         while True:
-            if (self.get_time_stamp() - self.push_time_stamp) >= self.update_step*(60*60):
+            if (self.get_time_stamp() - self.push_time_stamp) >= self.update_step:
                 self.write_file()
                 self.__run_git()
 
 
 if __name__ == "__main__":
-    ug_obj = UpdateGit('file_dir',update_step=5)
+    ug_obj = UpdateGit('file_dir',update_step=30)
     ug_obj.run()
