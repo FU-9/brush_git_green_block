@@ -77,5 +77,5 @@ class UpdateGit:
 
 
 if __name__ == "__main__":
-    ug_obj = UpdateGit('file_dir',update_step=30)
+    ug_obj = UpdateGit('file_dir',update_step=1)
     ug_obj.run()
